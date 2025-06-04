@@ -39,6 +39,9 @@ npm install # or yarn
 # Or run the setup script which installs packages listed in
 # `requirements.txt`
 ./setup.sh
+# If using a proxy set via `npm_config_http_proxy`, rename it to
+# `npm_config_proxy` before running npm commands
+export npm_config_proxy=$npm_config_http_proxy
 
 # Start the development server
 npm start   # or yarn start
