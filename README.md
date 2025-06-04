@@ -329,6 +329,7 @@ $secondary-color: #001f3f;
 Once you finish your setup. You need to put your website online!
 
 I highly recommend to use [Netlify](https://netlify.com) because it is super easy.
+
 ### Docker
 
 You can containerize and run Simplefolio using Docker:
@@ -339,6 +340,35 @@ docker run -p 80:80 simplefolio
 ```
 
 Then open http://localhost in your browser.
+
+### Azure Container Instances
+
+Run the Docker image on Azure using [Azure Container Instances](https://learn.microsoft.com/azure/container-instances/container-instances-quickstart-docker):
+
+```bash
+# log in and set up a resource group
+az login
+az group create --name simplefolio-rg --location eastus
+
+# build the Docker image
+docker build -t simplefolio .
+
+# create a container registry and push your image
+az acr create --resource-group simplefolio-rg --name <registry-name> --sku Basic
+az acr login --name <registry-name>
+docker tag simplefolio <registry-name>.azurecr.io/simplefolio:latest
+docker push <registry-name>.azurecr.io/simplefolio:latest
+
+# deploy the container
+az container create \
+  --resource-group simplefolio-rg \
+  --name simplefolio \
+  --image <registry-name>.azurecr.io/simplefolio:latest \
+  --dns-name-label my-simplefolio \
+  --ports 80
+```
+
+After the container is deployed, open `http://my-simplefolio.<region>.azurecontainer.io` in your browser.
 
 ## Others versions 👥
 
