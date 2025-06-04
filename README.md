@@ -1,4 +1,4 @@
-# NourddinePortfilio ⚡️ [![GitHub](https://img.shields.io/github/license/cobiwave/NourddinePortfilio?color=blue)](https://github.com/cobiwave/NourddinePortfilio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobiwave/NourddinePortfilio) ![GitHub forks](https://img.shields.io/github/forks/cobiwave/NourddinePortfilio)
+# NourddinePortfolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobiwave/NourddinePortfolio?color=blue)](https://github.com/cobiwave/NourddinePortfolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobiwave/NourddinePortfolio) ![GitHub forks](https://img.shields.io/github/forks/cobiwave/NourddinePortfolio)
 
 ## A minimal portfolio template for Developers!
 
@@ -31,8 +31,8 @@ View the demo: **[click here](https://the-simplefolio.netlify.app/)**
 
 ```bash
 # Clone the repository
-git clone https://github.com/cobiwave/NourddinePortfilio
-cd NourddinePortfilio
+git clone https://github.com/cobiwave/NourddinePortfolio
+cd NourddinePortfolio
 
 # Install dependencies
 npm install # or yarn
