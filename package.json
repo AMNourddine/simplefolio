@@ -1,5 +1,5 @@
 {
-  "name": "NourddinePortfilio",
+  "name": "NourddinePortfolio",
   "version": "1.0.1",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/NourddinePortfilio"
+    "url": "git+https://github.com/cobiwave/NourddinePortfolio"
   },
   "keywords": [],
   "author": "Jacobo Martinez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/NourddinePortfilio/issues"
+    "url": "https://github.com/cobiwave/NourddinePortfolio/issues"
   },
-  "homepage": "https://github.com/cobiwave/NourddinePortfilio#readme",
+  "homepage": "https://github.com/cobiwave/NourddinePortfolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.2",
     "parcel": "^2.15.2",
