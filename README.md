@@ -36,6 +36,9 @@ cd NourddinePortfilio
 
 # Install dependencies
 npm install # or yarn
+# Or run the setup script which installs packages listed in
+# `requirements.txt`
+./setup.sh
 
 # Start the development server
 npm start   # or yarn start
