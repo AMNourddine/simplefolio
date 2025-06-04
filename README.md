@@ -329,6 +329,16 @@ $secondary-color: #001f3f;
 Once you finish your setup. You need to put your website online!
 
 I highly recommend to use [Netlify](https://netlify.com) because it is super easy.
+### Docker
+
+You can containerize and run Simplefolio using Docker:
+
+```
+docker build -t simplefolio .
+docker run -p 80:80 simplefolio
+```
+
+Then open http://localhost in your browser.
 
 ## Others versions 👥
 
