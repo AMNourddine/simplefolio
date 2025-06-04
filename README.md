@@ -1,4 +1,4 @@
-# Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobiwave/simplefolio?color=blue)](https://github.com/cobiwave/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobiwave/simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobiwave/simplefolio)
+# NourddinePortfilio ⚡️ [![GitHub](https://img.shields.io/github/license/cobiwave/NourddinePortfilio?color=blue)](https://github.com/cobiwave/NourddinePortfilio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobiwave/NourddinePortfilio) ![GitHub forks](https://img.shields.io/github/forks/cobiwave/NourddinePortfilio)
 
 ## A minimal portfolio template for Developers!
 
@@ -51,14 +51,14 @@ yarn@v1.22.10 or higher
 
 ## How To Use 🔧
 
-From your command line, first clone Simplefolio:
+From your command line, first clone NourddinePortfilio:
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/cobiwave/simplefolio
+$ git clone https://github.com/cobiwave/NourddinePortfilio
 
 # Move into the repository
-$ cd simplefolio
+$ cd NourddinePortfilio
 
 # Remove the current origin repository
 $ git remote remove origin
@@ -335,8 +335,8 @@ I highly recommend to use [Netlify](https://netlify.com) because it is super eas
 You can containerize and run Simplefolio using Docker:
 
 ```
-docker build -t simplefolio .
-docker run -p 80:80 simplefolio
+docker build -t NourddinePortfilio .
+docker run -p 80:80 NourddinePortfilio
 ```
 
 Then open http://localhost in your browser.
@@ -348,27 +348,27 @@ Run the Docker image on Azure using [Azure Container Instances](https://learn.mi
 ```bash
 # log in and set up a resource group
 az login
-az group create --name simplefolio-rg --location eastus
+az group create --name NourddinePortfilio-rg --location eastus
 
 # build the Docker image
-docker build -t simplefolio .
+docker build -t NourddinePortfilio .
 
 # create a container registry and push your image
-az acr create --resource-group simplefolio-rg --name <registry-name> --sku Basic
+az acr create --resource-group NourddinePortfilio-rg --name <registry-name> --sku Basic
 az acr login --name <registry-name>
-docker tag simplefolio <registry-name>.azurecr.io/simplefolio:latest
-docker push <registry-name>.azurecr.io/simplefolio:latest
+docker tag NourddinePortfilio <registry-name>.azurecr.io/NourddinePortfilio:latest
+docker push <registry-name>.azurecr.io/NourddinePortfilio:latest
 
 # deploy the container
 az container create \
-  --resource-group simplefolio-rg \
-  --name simplefolio \
-  --image <registry-name>.azurecr.io/simplefolio:latest \
-  --dns-name-label my-simplefolio \
+  --resource-group NourddinePortfilio-rg \
+  --name NourddinePortfilio \
+  --image <registry-name>.azurecr.io/NourddinePortfilio:latest \
+  --dns-name-label my-NourddinePortfilio \
   --ports 80
 ```
 
-After the container is deployed, open `http://my-simplefolio.<region>.azurecontainer.io` in your browser.
+After the container is deployed, open `http://my-NourddinePortfilio.<region>.azurecontainer.io` in your browser.
 
 ## Others versions 👥
 
