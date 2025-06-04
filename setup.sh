@@ -45,4 +45,7 @@ if [ ${#dev_packages[@]} -gt 0 ]; then
   npm install -D "${dev_packages[@]}"
 fi
 
+# Update browserslist database to avoid version warnings
+npx update-browserslist-db@latest
+
 echo "Setup completed."
