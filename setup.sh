@@ -7,6 +7,12 @@ if ! command -v npm >/dev/null 2>&1; then
   exit 1
 fi
 
+# Map deprecated npm_config_http_proxy to npm_config_proxy to avoid npm warnings
+if [ -n "${npm_config_http_proxy-}" ] && [ -z "${npm_config_proxy-}" ]; then
+  export npm_config_proxy="$npm_config_http_proxy"
+  unset npm_config_http_proxy
+fi
+
 if [ ! -f requirements.txt ]; then
   echo "requirements.txt not found." >&2
   exit 1
